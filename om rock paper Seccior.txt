@@ -1,0 +1,47 @@
+// ROCK PAPER SESSIOR
+package com.company;
+import java .util.Scanner;
+import java .util.Random;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Random random =new Random();
+        System.out.println(" //// INSTRUCTION FOR MY GAME ////\n1) ENTER BETWEEN (0-0.33) FOR ROCK \n 2)ENTER BETWEEN (0.33-0.66) FOR PAPER \n 3)ENTER BETWEEN (0.66-0.99) FOR SESSIOR");
+       float b= random.nextFloat();
+
+        float  a =sc.nextFloat();
+        if (a>0&&a<0.33&&b>0.33&&b<0.66){
+            System.out.println(" COMPUTER WIN");
+        }
+        else if (a>0&&a<0.33&&b>0.66&&b<0.99){
+            System.out.println("YOU WIN ");}
+            else if (a>0.33&&a<0.66&&b>0&&b<0.33){
+                System.out.println("YOU WIN");
+            }
+            else if (a>0&&a<0.66&&b>0.66&&b<0.99){
+                System.out.println("COMPUTER WIN");}
+                else if (a>0.66&&a<0.99&&b>0&&b<0.33){
+                    System.out.println("COMPUTER WIN ");}
+                    else if (a>0.66&&a<0.99&&b>0.33&&b<0.66){
+                        System.out.println(" YOU WIN");
+                    }else if (a<0.33&&b<0.33) {
+            System.out.println(" MATCH TIED");
+        }else if (a>0.33&&a<0.66&&b>0.33&&b<0.66){
+            System.out.println(" MATCH TIED");
+        }else if (a>0.66&&a<0.99&&b>0.66&&b<0.99){
+            System.out.println(" MATCH TIED");
+        }else {
+            System.out.println("YOU HAVE ENTER INCORRESCT FORMAT");
+        }
+
+        if (b<0.33) {
+            System.out.println("COMPUTER ENTERED : ROCK");
+        }
+        else if (b>0.33&&b<0.66) {
+            System.out.println(" COMPUTER ENTERED PAPER ");
+        }
+        else {
+            System.out.println(" COMPUTER ENTERED SCISSOR");
+        }
+                }
+            }
